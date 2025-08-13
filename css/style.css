@@ -1,0 +1,110 @@
+*, h1, h2, h3, h4, h5, h6, p {
+  font-family: "Nunito Sans", "Mulish", "noto sans TC";
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: #1c1c1c;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+body {
+  background-color: #f3eee3;
+  background-image: url("../images/BGI.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  width: 80%;
+  max-width: 1000px;
+  padding: 8rem 0;
+}
+
+#Hero {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url("../images/Hero.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #999;
+  width: 100%;
+  height: calc(100vh - 65px);
+}
+
+#Hero .container {
+  width: 85%;
+  max-width: 1440px;
+  height: 100%;
+  padding: 0;
+}
+
+#Hero .title {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 100px;
+  gap: 36px;
+}
+
+#Hero .title h1 {
+  color: #fff;
+}
+
+#Hero .download {
+  display: flex;
+  flex-direction: row;
+}
+
+#Hero .download a {
+  margin: 0 32px;
+}
+
+#Statement {
+  background-color: #fff;
+}
+
+#Statement .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#Statement img {
+  margin-bottom: 28px;
+}
+
+#BGI {
+  width: 100%;
+  height: 43.75rem;
+}/*# sourceMappingURL=style.css.map */
