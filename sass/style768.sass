@@ -1,0 +1,26 @@
+@use "mixin" as *
+
+@media screen and (width <= 768px)
+    .container
+        width: 95%
+        padding: 6rem 0
+
+    #Hero
+        background-position: 75% center
+
+    #Hero .title
+        width: 100%
+        gap: 12px
+        h1
+            line-height: 4rem
+
+    #Feature .cardFeature
+        width: 80%
+        margin: auto
+        ol
+            flex-wrap: wrap
+    #Gallery .grid-container
+        grid-template-rows: auto
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+        .item2, .item4, .item5, .item6, .item7, .item9, .item10
+            grid-area: unset

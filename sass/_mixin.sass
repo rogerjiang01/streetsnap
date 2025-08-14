@@ -11,3 +11,18 @@
 @mixin color($name, $color)
     .#{$name}
         color: $color
+
+// 定義斷點
+$desktop-width: 1200px
+$tablet-width: 768px
+$phone-width: 480px
+
+// 響應式文字大小 Mixin
+@mixin responsive-font($size-desktop, $size-tablet, $size-phone)
+    font-size: $size-desktop // 預設為桌面版文字大小
+
+    @media (max-width: $desktop-width)
+        font-size: $size-tablet // 平板電腦尺寸
+
+    @media (max-width: $tablet-width)
+        font-size: $size-phone // 手機尺寸

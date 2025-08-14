@@ -1,0 +1,30 @@
+@media screen and (width <= 768px) {
+  .container {
+    width: 95%;
+    padding: 6rem 0;
+  }
+  #Hero {
+    background-position: 75% center;
+  }
+  #Hero .title {
+    width: 100%;
+    gap: 12px;
+  }
+  #Hero .title h1 {
+    line-height: 4rem;
+  }
+  #Feature .cardFeature {
+    width: 80%;
+    margin: auto;
+  }
+  #Feature .cardFeature ol {
+    flex-wrap: wrap;
+  }
+  #Gallery .grid-container {
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  #Gallery .grid-container .item2, #Gallery .grid-container .item4, #Gallery .grid-container .item5, #Gallery .grid-container .item6, #Gallery .grid-container .item7, #Gallery .grid-container .item9, #Gallery .grid-container .item10 {
+    grid-area: unset;
+  }
+}/*# sourceMappingURL=style768.css.map */
