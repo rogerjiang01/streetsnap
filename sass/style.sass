@@ -7,6 +7,8 @@
     font-style: normal
     color: #1c1c1c
 
+h1,h2,h3,h4,h5,h6
+    cursor: default
 h1
     @include responsive-font(4rem, 2.55rem, 1.7rem)
     font-weight: 600
@@ -28,6 +30,7 @@ h6
     font-weight: 600
 p
     font-size: 1rem
+    cursor: text
 
 body
     background-color: #f3eee3
@@ -130,12 +133,35 @@ body
     list-style: none
     justify-content: space-between
     gap: 20px
+    padding: 0
 
-#Feature .cardFeature a
-    display: flex
-    flex-direction: column
-    align-items: center
-    text-decoration: none
+#Feature .cardFeature
+    a
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-decoration: none
+        i, h5, p
+            transition: all 200ms ease
+
+#Feature .cardFeature li
+    &:nth-child(1):hover
+        i, h5, p
+            color: #d64b3e
+        h5, p
+            text-decoration: underline
+
+    &:nth-child(2):hover
+        i, h5, p
+            color: #d64b3e
+        h5, p
+            text-decoration: underline
+
+    &:nth-child(3):hover
+        i, h5, p
+            color: #d64b3e
+        h5, p
+            text-decoration: underline
 
 #Feature .cardFeature i
     @include responsive-font(6.25rem, 5rem, 4rem)
@@ -217,6 +243,7 @@ body
     justify-content: space-between
     align-items: flex-start
     gap: 32px
+    padding: 0
 
 #Service .steps .step-item
     display: flex

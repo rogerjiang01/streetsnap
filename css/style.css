@@ -5,6 +5,10 @@
   color: #1c1c1c;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  cursor: default;
+}
+
 h1 {
   font-size: 4rem;
   font-weight: 600;
@@ -87,6 +91,7 @@ h6 {
 
 p {
   font-size: 1rem;
+  cursor: text;
 }
 
 body {
@@ -203,6 +208,7 @@ body {
   list-style: none;
   justify-content: space-between;
   gap: 20px;
+  padding: 0;
 }
 
 #Feature .cardFeature a {
@@ -210,6 +216,28 @@ body {
   flex-direction: column;
   align-items: center;
   text-decoration: none;
+}
+#Feature .cardFeature a i, #Feature .cardFeature a h5, #Feature .cardFeature a p {
+  transition: all 200ms ease;
+}
+
+#Feature .cardFeature li:nth-child(1):hover i, #Feature .cardFeature li:nth-child(1):hover h5, #Feature .cardFeature li:nth-child(1):hover p {
+  color: #d64b3e;
+}
+#Feature .cardFeature li:nth-child(1):hover h5, #Feature .cardFeature li:nth-child(1):hover p {
+  text-decoration: underline;
+}
+#Feature .cardFeature li:nth-child(2):hover i, #Feature .cardFeature li:nth-child(2):hover h5, #Feature .cardFeature li:nth-child(2):hover p {
+  color: #d64b3e;
+}
+#Feature .cardFeature li:nth-child(2):hover h5, #Feature .cardFeature li:nth-child(2):hover p {
+  text-decoration: underline;
+}
+#Feature .cardFeature li:nth-child(3):hover i, #Feature .cardFeature li:nth-child(3):hover h5, #Feature .cardFeature li:nth-child(3):hover p {
+  color: #d64b3e;
+}
+#Feature .cardFeature li:nth-child(3):hover h5, #Feature .cardFeature li:nth-child(3):hover p {
+  text-decoration: underline;
 }
 
 #Feature .cardFeature i {
@@ -318,6 +346,7 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   gap: 32px;
+  padding: 0;
 }
 
 #Service .steps .step-item {
