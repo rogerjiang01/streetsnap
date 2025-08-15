@@ -96,6 +96,7 @@ p {
 
 body {
   background-color: #f3eee3;
+  background-image: url("../images/BGI.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -223,20 +224,11 @@ body {
 #Feature .cardFeature li:nth-child(1):hover i, #Feature .cardFeature li:nth-child(1):hover h5, #Feature .cardFeature li:nth-child(1):hover p {
   color: #d64b3e;
 }
-#Feature .cardFeature li:nth-child(1):hover h5, #Feature .cardFeature li:nth-child(1):hover p {
-  text-decoration: underline;
-}
 #Feature .cardFeature li:nth-child(2):hover i, #Feature .cardFeature li:nth-child(2):hover h5, #Feature .cardFeature li:nth-child(2):hover p {
   color: #d64b3e;
 }
-#Feature .cardFeature li:nth-child(2):hover h5, #Feature .cardFeature li:nth-child(2):hover p {
-  text-decoration: underline;
-}
 #Feature .cardFeature li:nth-child(3):hover i, #Feature .cardFeature li:nth-child(3):hover h5, #Feature .cardFeature li:nth-child(3):hover p {
   color: #d64b3e;
-}
-#Feature .cardFeature li:nth-child(3):hover h5, #Feature .cardFeature li:nth-child(3):hover p {
-  text-decoration: underline;
 }
 
 #Feature .cardFeature i {
