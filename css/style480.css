@@ -2,6 +2,11 @@
   html {
     font-size: 14px;
   }
+  body {
+    background-color: #f3eee3;
+    width: 100%;
+    min-height: 100vh;
+  }
   .container {
     padding: 4rem 0;
   }
@@ -27,13 +32,15 @@
     margin: 0.75rem;
   }
   #BGI {
-    height: 20rem;
-    background-color: #f3eee3;
+    width: 100%;
+    height: 43.75rem;
     background-image: url("../images/BGI.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    width: 100%;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 0;
   }
   #Gallery .container {
     padding-left: 0.5rem;

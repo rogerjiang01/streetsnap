@@ -3,6 +3,10 @@
 @media screen and (width <= 480px)
     html
         font-size: 14px
+    body
+        background-color: #f3eee3 // 保留背景顏色
+        width: 100%
+        min-height: 100vh
     .container
         padding: 4rem 0
     .logo-pic
@@ -22,14 +26,23 @@
             margin: .75rem
 
     #BGI
-        height: 20rem
-        background-color: #f3eee3
+        width: 100%
+        height: 43.75rem
         background-image: url("../images/BGI.jpg")
         background-repeat: no-repeat
         background-size: cover
         background-position: center center
+        background-attachment: fixed // 手機上可能無效
+        position: relative // 確保內容在背景之上
+        z-index: 0
+        // height: 20rem
+        // background-color: #f3eee3
+        // background-image: url("../images/BGI.jpg")
+        // background-repeat: no-repeat
+        // background-size: cover
+        // background-position: center center
         // background-attachment: fixed
-        width: 100%
+        // width: 100%
 
     #Gallery
         .container
