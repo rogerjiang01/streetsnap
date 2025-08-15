@@ -1,0 +1,59 @@
+@use "mixin" as *
+
+@media screen and (width <= 480px)
+    html
+        font-size: 14px
+    .container
+        padding: 4rem 0
+    .logo-pic
+        width: 60%
+    #Hero
+        height: 70vh
+        .container
+            width: 90%
+        .title
+            gap: 8px
+            h1
+                line-height: 3.5rem
+    .download
+        a
+            margin: .75rem
+
+    #BGI
+        height: 30rem
+
+    #Gallery
+        .container
+            padding-left: .5rem
+            padding-right: .5rem
+        .grid-container
+            grid-template-rows: auto
+            grid-template-columns: repeat(1, minmax(0, 1fr))
+            row-gap: 1rem
+            .item2, .item4, .item5, .item6, .item7, .item9, .item10
+                grid-area: unset
+
+    #Service .title
+        margin-bottom: 3rem
+
+    #Service .steps ol
+        flex-wrap: wrap
+        margin: auto
+        width: 80%
+
+    #Service .steps .step-item
+        width: 80%
+        gap: 0
+        img
+            width: 30%
+
+    #CallToAction
+        height: 50vh
+        .title
+            padding-bottom: 70px
+            width: 100%
+            gap: 0
+
+    footer
+        .logo-pic
+            width: 50%

@@ -3,6 +3,15 @@
     width: 95%;
     padding: 6rem 0;
   }
+  .navbar .navbar-collapse .navbar-nav {
+    text-align: center;
+  }
+  .navbar .navbar-collapse .navbar-nav .nav-link {
+    padding: 1rem 0;
+  }
+  .navbar .navbar-collapse .btn {
+    width: 100%;
+  }
   #Hero {
     background-position: 75% center;
   }
@@ -12,6 +21,12 @@
   }
   #Hero .title h1 {
     line-height: 4rem;
+  }
+  .download a {
+    margin: 1rem;
+  }
+  .download img {
+    width: 80%;
   }
   #Feature .cardFeature {
     width: 80%;
@@ -26,5 +41,57 @@
   }
   #Gallery .grid-container .item2, #Gallery .grid-container .item4, #Gallery .grid-container .item5, #Gallery .grid-container .item6, #Gallery .grid-container .item7, #Gallery .grid-container .item9, #Gallery .grid-container .item10 {
     grid-area: unset;
+  }
+  #Gallery .grid-container .item2 {
+    grid-area: 1/2/3/3;
+  }
+  #Gallery .grid-container .item4 {
+    grid-area: 3/2/5/3;
+  }
+  #Gallery .grid-container .item6 {
+    grid-area: 4/1/6/2;
+  }
+  #Gallery .grid-container .item7 {
+    grid-area: 5/2/7/3;
+  }
+  #Service .title h3 {
+    margin-bottom: -0.3rem;
+  }
+  #Service .steps ol {
+    flex-wrap: wrap;
+    margin: auto;
+    width: 80%;
+  }
+  #Service .steps .step-item {
+    width: 45%;
+    gap: 0;
+  }
+  #CallToAction .title {
+    width: 100%;
+    padding-bottom: 70px;
+  }
+  #CallToAction .backToTop {
+    bottom: -2rem;
+    left: calc(50% - 2rem);
+  }
+  #CallToAction .backToTop .circle {
+    width: 4rem;
+    height: 4rem;
+  }
+  #CallToAction .backToTop .circle a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #CallToAction .backToTop .circle a img {
+    width: 60%;
+  }
+  footer .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  footer .footer-list ol {
+    gap: 0.5rem;
   }
 }/*# sourceMappingURL=style768.css.map */

@@ -11,12 +11,12 @@ h1 {
 }
 @media (max-width: 1200px) {
   h1 {
-    font-size: 3rem;
+    font-size: 2.55rem;
   }
 }
 @media (max-width: 768px) {
   h1 {
-    font-size: 2.5rem;
+    font-size: 1.7rem;
   }
 }
 
@@ -31,7 +31,7 @@ h2 {
 }
 @media (max-width: 768px) {
   h2 {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 }
 
@@ -46,7 +46,7 @@ h3 {
 }
 @media (max-width: 768px) {
   h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -61,7 +61,7 @@ h4 {
 }
 @media (max-width: 768px) {
   h4 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -143,8 +143,11 @@ body {
   flex-direction: row;
 }
 
-#Hero .download a {
-  margin: 0 32px;
+.download a {
+  margin: 0 2rem;
+}
+.download img {
+  width: 100%;
 }
 
 #Statement {
@@ -160,6 +163,11 @@ body {
 
 #Statement img {
   margin-bottom: 28px;
+}
+
+#Statement p {
+  text-align: center;
+  line-height: 2rem;
 }
 
 #BGI {
@@ -292,13 +300,15 @@ body {
 #Service .title {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  justify-content: flex-start;
+  align-items: flex-end;
   gap: 12px;
   margin-bottom: 4rem;
 }
 
-#Service .title img {
-  padding-top: 4px;
+#Service .title h3 {
+  margin: 0;
+  margin-bottom: -0.5rem;
 }
 
 #Service .steps ol {
@@ -358,23 +368,19 @@ body {
   flex-direction: row;
 }
 
-#CallToAction .download a {
-  margin: 0 32px;
-}
-
 #CallToAction .backToTop {
   position: absolute;
-  bottom: -6%;
-  left: 50%;
+  bottom: -2.8125rem;
+  left: calc(50% - 2.8125rem);
 }
 #CallToAction .backToTop .circle {
   border-radius: 50px;
   background: rgba(28, 28, 28, 0.7);
   display: flex;
-  width: 90px;
-  height: 90px;
-  padding: 29px 22px;
+  width: 5.625rem;
+  height: 5.625rem;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 10px;
   aspect-ratio: 1/1;
@@ -408,6 +414,7 @@ footer .footer-list ol {
   align-items: center;
   list-style: none;
   gap: 16px;
+  padding: 0;
 }
 
 footer .footer-list li {

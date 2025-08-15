@@ -1,0 +1,67 @@
+@media screen and (width <= 480px) {
+  html {
+    font-size: 14px;
+  }
+  .container {
+    padding: 4rem 0;
+  }
+  .logo-pic {
+    width: 60%;
+  }
+  #Hero {
+    height: 70vh;
+  }
+  #Hero .container {
+    width: 90%;
+  }
+  #Hero .title {
+    gap: 8px;
+  }
+  #Hero .title h1 {
+    line-height: 3.5rem;
+  }
+  .download a {
+    margin: 0.75rem;
+  }
+  #BGI {
+    height: 30rem;
+  }
+  #Gallery .container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  #Gallery .grid-container {
+    grid-template-rows: auto;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    row-gap: 1rem;
+  }
+  #Gallery .grid-container .item2, #Gallery .grid-container .item4, #Gallery .grid-container .item5, #Gallery .grid-container .item6, #Gallery .grid-container .item7, #Gallery .grid-container .item9, #Gallery .grid-container .item10 {
+    grid-area: unset;
+  }
+  #Service .title {
+    margin-bottom: 3rem;
+  }
+  #Service .steps ol {
+    flex-wrap: wrap;
+    margin: auto;
+    width: 80%;
+  }
+  #Service .steps .step-item {
+    width: 80%;
+    gap: 0;
+  }
+  #Service .steps .step-item img {
+    width: 30%;
+  }
+  #CallToAction {
+    height: 50vh;
+  }
+  #CallToAction .title {
+    padding-bottom: 70px;
+    width: 100%;
+    gap: 0;
+  }
+  footer .logo-pic {
+    width: 50%;
+  }
+}/*# sourceMappingURL=style480.css.map */
