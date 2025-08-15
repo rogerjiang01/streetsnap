@@ -25,6 +25,13 @@
   }
   #BGI {
     height: 30rem;
+    background-color: #f3eee3;
+    background-image: url("../images/BGI.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    width: 100%;
   }
   #Gallery .container {
     padding-left: 0.5rem;
