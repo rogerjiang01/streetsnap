@@ -2,8 +2,12 @@
 
 @media screen and (width <= 768px)
     .container
-        width: 95%
+        width: 85%
         padding: 6rem 0
+
+    .navbar .navbar-brand
+        img
+            margin: 8px 0
 
     .navbar .navbar-collapse
         .navbar-nav
@@ -17,16 +21,19 @@
         background-position: 75% center
 
     #Hero .title
-        width: 100%
+        width: 90%
         gap: 12px
         h1
             line-height: 4rem
 
     .download
-        a
-            margin: 1rem
+        a:nth-child(1)
+            margin: 0 0 0 1rem
+            // width: 24%
+        a:nth-child(2)
+            margin: 0
         img
-            width: 80%
+            width: 90%
 
     #Feature .cardFeature
         width: 60%
@@ -53,12 +60,12 @@
             margin-bottom: -0.3rem
     #Service .steps ol
         flex-wrap: wrap
-        margin: auto
-        width: 80%
+        margin: 0
+        width: 100%
 
     #Service .steps .step-item
-        width: 45%
-        gap: 0
+        width: 46%
+        // gap: 12px
 
     #CallToAction .title
         width: 100%

@@ -13,8 +13,9 @@
   .logo-pic {
     width: 50%;
   }
-  .navbar img {
+  .navbar .navbar-brand img {
     width: 60%;
+    margin: 8px 0;
   }
   #Hero {
     height: 70vh;
@@ -28,8 +29,14 @@
   #Hero .title h1 {
     line-height: 3.5rem;
   }
-  .download a {
-    margin: 0.75rem;
+  .download a:nth-child(1) {
+    margin-left: 1rem;
+  }
+  .download a:nth-child(2) {
+    margin-left: -2rem;
+  }
+  .download img {
+    width: 75%;
   }
   #BGI {
     height: 20rem;
@@ -39,9 +46,19 @@
     background-size: cover;
     background-position: center center;
   }
+  #Feature .title {
+    justify-content: center;
+    gap: 8px;
+  }
   #Gallery .container {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+  }
+  #Gallery .container h2, #Gallery .container h6, #Gallery .container p {
+    text-align: center;
+  }
+  #Gallery .container h6 {
+    margin-bottom: 20px;
   }
   #Gallery .grid-container {
     grid-template-rows: auto;
@@ -53,26 +70,39 @@
   }
   #Service .title {
     margin-bottom: 3rem;
+    justify-content: center;
   }
   #Service .steps ol {
     flex-wrap: wrap;
-    width: 80%;
+    width: 75%;
+    margin: auto;
   }
   #Service .steps .step-item {
-    width: 80%;
+    width: 100%;
     margin: auto;
-    gap: 0;
+    gap: 12px;
   }
   #Service .steps .step-item img {
-    width: 30%;
+    width: 20%;
+    margin: auto;
+  }
+  #Service .steps .step-item p {
+    text-align: center;
+  }
+  #Service .steps .step-item h5 {
+    width: 100%;
+    text-align: center;
   }
   #CallToAction {
     height: 50vh;
   }
+  #CallToAction .container {
+    width: 90%;
+  }
   #CallToAction .title {
     padding-bottom: 70px;
     width: 100%;
-    gap: 0;
+    gap: 12px;
   }
   footer .logo-pic {
     width: 50%;

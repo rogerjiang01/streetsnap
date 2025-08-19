@@ -11,8 +11,10 @@
         padding: 4rem 0
     .logo-pic
         width: 50%
-    .navbar img
-        width: 60%
+    .navbar .navbar-brand
+        img
+            width: 60%
+            margin: 8px 0
     #Hero
         height: 70vh
         .container
@@ -22,8 +24,13 @@
             h1
                 line-height: 3.5rem
     .download
-        a
-            margin: .75rem
+        a:nth-child(1)
+            margin-left: 1rem
+            // width: 24%
+        a:nth-child(2)
+            margin-left: -2rem
+        img
+            width: 75%
 
     #BGI
         height: 20rem
@@ -33,10 +40,19 @@
         background-size: cover
         background-position: center center
 
+    #Feature .title
+        justify-content: center
+        gap: 8px
+
     #Gallery
         .container
             padding-left: .5rem
             padding-right: .5rem
+            h2,h6,p
+                text-align: center
+            h6
+                margin-bottom: 20px
+
         .grid-container
             grid-template-rows: auto
             grid-template-columns: repeat(1, minmax(0, 1fr))
@@ -46,25 +62,34 @@
 
     #Service .title
         margin-bottom: 3rem
+        justify-content: center
 
     #Service .steps ol
         flex-wrap: wrap
-
-        width: 80%
+        width: 75%
+        margin: auto
 
     #Service .steps .step-item
-        width: 80%
+        width: 100%
         margin: auto
-        gap: 0
+        gap: 12px
         img
-            width: 30%
+            width: 20%
+            margin: auto
+        p
+            text-align: center
+        h5
+            width: 100%
+            text-align: center
 
     #CallToAction
         height: 50vh
+        .container
+            width: 90%
         .title
             padding-bottom: 70px
             width: 100%
-            gap: 0
+            gap: 12px
 
     footer
         .logo-pic
