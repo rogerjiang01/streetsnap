@@ -40,11 +40,20 @@
   }
   #BGI {
     height: 20rem;
-    background-color: #f3eee3;
+    width: 100%;
+    height: 43.75rem;
     background-image: url("../images/BGI.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 0;
+  }
+  #BGI .container {
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
   }
   #Feature .title {
     justify-content: center;
