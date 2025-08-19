@@ -32,26 +32,30 @@
         img
             width: 75%
 
+    body
+        background-image: none
     #BGI
-        height: 20rem
+        position: relative // 為偽元素提供定位上下文
         width: 100%
-        height: 43.75rem
-        background-image: url("../images/BGI.jpg")
-        background-repeat: no-repeat
-        background-size: cover
-        background-position: center center
-        background-attachment: fixed // 手機上可能無效
-        position: relative // 確保內容在背景之上
-        z-index: 0
+        height: 20rem // 桌面高度
+        overflow: hidden // 防止偽元素溢出
         // background-color: #f3eee3
         // background-image: url("../images/BGI.jpg")
         // background-repeat: no-repeat
         // background-size: cover
         // background-position: center center
-        .container
-            position: relative
-            z-index: 1
-            padding: 2rem
+        &::before
+            content: ''
+            position: fixed // 固定於視窗
+            top: 0
+            left: 0
+            width: 100%
+            height: 100vh // 與 #BGI 高度一致
+            background-image: url("../images/BGI.jpg")
+            background-repeat: no-repeat
+            background-size: cover
+            background-position: center center
+            z-index: -1 // 放在內容後方
 
     #Feature .title
         justify-content: center
